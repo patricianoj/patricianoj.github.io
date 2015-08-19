@@ -20,23 +20,23 @@ section.module.parallax h2, section.module.parallax h3 {
 }
 
 section.module.parallax {
-  background-image: url("editcrop.jpg");
+  background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349423/c8e1704a-45fa-11e5-817e-c4d53dec7f80.jpg");
 }
 
 section.module.parallax-1 {
-  background-image: url("sign.png");
+  background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349439/c90d5fe8-45fa-11e5-8787-103307668425.png");
 }
 
 section.module.parallax-2 {
-  background-image: url("grad.jpg");
+  background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349419/b03c3f34-45fa-11e5-98e6-03c752671fe2.jpg");
 }
 
 section.module.parallax-3 {
-  background-image: url("pencils.jpg");
+  background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349412/a7a51f62-45fa-11e5-8b48-9a8f97b8e9fc.jpg");
 }
 
 section.module.parallax-4 {
-  background-image: url("code.jpg");
+  background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349414/ac8a5b8c-45fa-11e5-83ef-14eb0a6e9c2b.jpg");
 }
 
 @media all and (min-width: 600px) {
