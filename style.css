@@ -20,23 +20,23 @@ section.module.parallax h2, section.module.parallax h3 {
 }
 
 section.module.parallax {
-  background-image: url("../pictures/parallax/editcrop.jpg");
+  background-image: url("editcrop.jpg");
 }
 
 section.module.parallax-1 {
-  background-image: url("../pictures/parallax/sign.png");
+  background-image: url("sign.png");
 }
 
 section.module.parallax-2 {
-  background-image: url("../pictures/parallax/grad.jpg");
+  background-image: url("grad.jpg");
 }
 
 section.module.parallax-3 {
-  background-image: url("../pictures/parallax/pencils.jpg");
+  background-image: url("pencils.jpg");
 }
 
 section.module.parallax-4 {
-  background-image: url("../pictures/parallax/code.jpg");
+  background-image: url("code.jpg");
 }
 
 @media all and (min-width: 600px) {
@@ -69,7 +69,6 @@ body {
 
 #menu {
     height: 25px;
-    /* background-color: #808080;*/
     color: #FFFFFF;
     margin: 0px auto;
 }
