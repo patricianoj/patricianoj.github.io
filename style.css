@@ -11,7 +11,7 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax h2, section.module.parallax h3 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 50px;
   line-height: 300px;
   font-weight: 100;
@@ -24,15 +24,27 @@ section.module.parallax {
 }
 
 section.module.parallax-1 {
-  background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349439/c90d5fe8-45fa-11e5-8787-103307668425.png");    
+    background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349439/c90d5fe8-45fa-11e5-8787-103307668425.png");    
     -webkit-column-span: all;
     column-span: all;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 50px;
+    line-height: 300px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 section.module.parallax-2 {
   background-image: url("https://cloud.githubusercontent.com/assets/13473751/9349419/b03c3f34-45fa-11e5-98e6-03c752671fe2.jpg");
     -webkit-column-span: all;
     column-span: all;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 50px;
+    line-height: 300px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 section.module.parallax-3 {
