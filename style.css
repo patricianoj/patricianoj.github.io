@@ -62,9 +62,9 @@ body {
     color: #FFFFFF;
     font-family: "Droid Sans", "Arial";
     margin: 0px auto;
-    width: 100%;
-    PADDING-LEFT: 10%;
-    PADDING-RIGHT: 10%;
+    width: 1200px;
+    PADDING-LEFT: 25px;
+    PADDING-RIGHT: 25px;
 }
 
 #menu {
