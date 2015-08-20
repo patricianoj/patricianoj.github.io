@@ -2,6 +2,13 @@
     PATRICIA's CSS File
     July 14th, 2015
 */
+a:link {
+    color: #3399FF;
+}
+
+a:visited {
+    color: #CC66FF;
+}
 
 section.module.parallax {
   height: 300px;
