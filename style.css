@@ -42,8 +42,7 @@ a.active {
 }
 
 #menu a:hover {
-  background-color: #E6E6E6;
-  color: #000000;
+  background-color: #535353;
 }
 
 section.module.parallax {
