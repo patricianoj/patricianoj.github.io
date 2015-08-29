@@ -1,6 +1,5 @@
 /*
     PATRICIA's CSS File
-    July 14th, 2015
 */
 
 ul {
@@ -42,7 +41,8 @@ a.active {
 }
 
 #menu a:hover {
-  background-color: #535353;
+  background-color: #E6E6E6;
+  color: #000000;
 }
 
 section.module.parallax {
