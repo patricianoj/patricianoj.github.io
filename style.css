@@ -41,7 +41,7 @@ a.active {
   cursor: default;
 }
 
-a:hover {
+#menu a:hover {
   background-color: #E6E6E6;
 }
 
