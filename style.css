@@ -19,7 +19,7 @@ li {
   height: 40px;
 }
 
-a {
+# menu a {
   text-decoration: none;
   color: #fff;
   display: block;
