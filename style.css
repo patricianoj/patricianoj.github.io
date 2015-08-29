@@ -2,12 +2,47 @@
     PATRICIA's CSS File
     July 14th, 2015
 */
+
+ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: -4px;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  width: 120px;
+}
+
 a:link {
     color: #3399FF;
 }
 
 a:visited {
     color: #CC66FF;
+}
+
+a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+a:hover {
+  background-color: #E6E6E6;
 }
 
 section.module.parallax {
