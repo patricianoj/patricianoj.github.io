@@ -1,8 +1,15 @@
-/*
-    PATRICIA's CSS File
-*/
+/*   PATRICIA's CSS File*/
 
-ul {
+body {
+    background-color: #000000;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', "Arial";
+    margin: 0px auto;
+    width: 1200px;
+}
+
+  ul {
   list-style: none;
   background-color: #444;
   text-align: center;
@@ -24,6 +31,10 @@ li {
   display: block;
   transition: .3s background-color;
   width: 120px;
+}
+
+table, th, td {
+    border: 1px solid black;
 }
 
 a:link {
@@ -83,7 +94,7 @@ section.module.parallax-4 {
 
 @media all and (min-width: 600px) {
   section.module p {
-    font-size: 20px;
+    font-size: 17px;
   }
   section.module.parallax h2 {
     font-size: 150px;
@@ -98,19 +109,17 @@ section.module.parallax-4 {
   }
 }
 
-body {
-    background-color: #000000;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: "Droid Sans", "Arial";
-    margin: 0px auto;
-    width: 1200px;
-    PADDING-LEFT: 25px;
-    PADDING-RIGHT: 25px;
-}
-
 #menu {
     height: 25px;
     color: #FFFFFF;
     margin: 0px auto;
+}
+
+#drawings {
+    background-color: #660033;
+}
+
+#kiwins, #code, #asb, #fi{
+    padding-left:20px;
+    padding-right:20px;
 }
