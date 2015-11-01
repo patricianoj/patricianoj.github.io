@@ -7,6 +7,8 @@ body {
     font-family: 'Open Sans', "Arial";
     margin: 0px auto;
     width: 1200px;
+    /*PADDING-LEFT: 25px;
+    PADDING-RIGHT: 25px;*/
 }
 
   ul {
@@ -25,14 +27,6 @@ li {
   height: 40px;
 }
 
-#menu a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
-  width: 120px;
-}
-
 table, th, td {
     border: 1px solid black;
 }
@@ -49,11 +43,6 @@ a.active {
   background-color: #fff;
   color: #444;
   cursor: default;
-}
-
-#menu a:hover {
-  background-color: #E6E6E6;
-  color: #000000;
 }
 
 section.module.parallax {
@@ -115,6 +104,19 @@ section.module.parallax-4 {
     margin: 0px auto;
 }
 
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  width: 130px;
+}
+
+#menu a:hover {
+  background-color: #E6E6E6;
+  color: #000000;
+}
+
 #drawings {
     background-color: #660033;
 }
@@ -122,6 +124,10 @@ section.module.parallax-4 {
 #kiwins, #code, #asb, #fi{
     padding-left:20px;
     padding-right:20px;
+}
+
+#recent {
+    background-color: #336699;
 }
 
 #contact {
