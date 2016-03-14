@@ -1,4 +1,12 @@
 /*   PATRICIA's CSS File*/
+* {
+    margin:0;
+}
+
+p {
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
 
 body {
     background-color: #000000;
@@ -6,25 +14,8 @@ body {
     color: #FFFFFF;
     font-family: 'Open Sans', "Arial";
     margin: 0px auto;
-    width: 1200px;
-    /*PADDING-LEFT: 25px;
-    PADDING-RIGHT: 25px;*/
-}
-
-  ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-  margin-right: -4px;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 table, th, td {
@@ -81,12 +72,16 @@ section.module.parallax-4 {
   background-image: url("http://parkinsonsaction.org/wp-content/uploads/2015/11/news.jpg");
 }
 
+section.module.parallax-5 {
+  background-image: url("http://image.uisdc.com/wp-content/uploads/2015/12/2zz20151201.jpg");
+}
+
 @media all and (min-width: 600px) {
   section.module p {
     font-size: 17px;
   }
   section.module.parallax h2 {
-    font-size: 150px;
+    font-size: 150px;  
   }
   section.module.parallax h3 {
     font-size: 120px;
@@ -99,9 +94,13 @@ section.module.parallax-4 {
 }
 
 #menu {
-    height: 25px;
+    height: 15px;
     color: #FFFFFF;
     margin: 0px auto;
+    top: 0;
+    width: 100%;
+    position:fixed;
+    z-index: 2;
 }
 
 #menu a {
@@ -121,9 +120,24 @@ section.module.parallax-4 {
     background-color: #660033;
 }
 
+#menu li {
+    display: inline-block;
+	margin-right: -4px;
+	font-size: 1.2em;
+	line-height: 40px;
+}
+
+#menu ul {
+	list-style: none;
+	background-color: #444;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
 #kiwins, #code, #asb, #fi{
-    padding-left:20px;
-    padding-right:20px;
+    padding-left:2%;
+    padding-right:2%;
 }
 
 #recent {
@@ -132,4 +146,12 @@ section.module.parallax-4 {
 
 #contact {
    background-color: #330033;
+}
+
+#about {
+    background-color: #444;
+    padding: 3px;
+    border: 3px;
+    border-style: solid;
+    border-color: #cc99ff;
 }
