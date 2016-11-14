@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Start Party</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Fjalla+One" rel="stylesheet">
+    <link rel="icon" type="image/png" href="http://www.iconsfind.com/wp-content/uploads/2013/11/File-Types-Cd-icon.png">
+	<script>
+		var code = Math.floor((Math.random() * 8999) + 1000);
+		$( document ).ready(function() {
+		$("#code").append("<p id = 'numbers'>"+ code +"</p>");
+		$("#uniqueCode").append("<p class = 'big'>"+ code + " Party Playlist</p>");
+		});
+	</script>
+</head>
+
+<body>  
+    <div id="directory">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findParty.html">Find Party</a></li>
+            <li><a href="startParty.html">Start Party</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+	</div>
+    <div id = "rest">
+		<div class = "ads"><center><p class = "big1">Adspace 1</p></center></div>
+		<div id ="main">
+			<center><p class = "big">YOUR PARTY'S UNIQUE CODE:</p>
+			<div id= "code"><p id ="numbers"></p></div>
+			<p class ="note">Share your unique code above with people you trust with access to the party playlsit.</p>
+			<p class ="note">This code allows others to add, remove, and skip songs.</p>
+			<button class = "button" id = "initiateParty" style = "margin-left:2%;"><a href ="#playlist">Go to Playlist</a></button></center>
+		</div>
+		<div class = "ads2"><center><p class = "big1">Adspace 2</p></center></div>
+    </div>
+	<br>
+	<div id ="partyPlaylist">
+		<center><div id = "uniqueCode"></div></center>
+		<div id = "playlist">
+			<table>
+				<tr>
+					<strong><th>#</th>
+					<th>Song</th>
+					<th>Artist</th>
+					<th>Added</th></strong>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Guallando</td>
+					<td>Fulanito</td>
+					<td>12:47AM 11/2/16</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Passion Whine</td>
+					<td>Farruko</td>
+					<td>12:50AM 11/2/16</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Passion Whine</td>
+					<td>Farruko</td>
+					<td>12:50AM 11/2/16</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Passion Whine</td>
+					<td>Farruko</td>
+					<td>12:50AM 11/2/16</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Passion Whine</td>
+					<td>Farruko</td>
+					<td>12:50AM 11/2/16</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="control">
+		<center>
+		<!--<div class="arrow-right"></div>-->
+		<!--<img src ="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-play-128.png" height = 40px>
+		<!--http://www.freeiconspng.com/uploads/pause-icon-15.png-->
+		<!--<img src = "http://icons.iconarchive.com/icons/icons8/ios7/256/Media-Controls-Fast-Forward-icon.png" height = 45px>-->
+		</center>     
+	</div>
+</body>
+<style>
+    a {
+		text-decoration: none; color: #744bdd;}
+    button:hover, a:hover {
+        text-decoration: none; }
+	div.ads {
+        float:left;
+        position: absolute;
+        height: 550px;
+        width: 250px;
+		left: 0;
+        background: #FFF;
+        color: #000;
+		top: 10%;
+    }
+	div.ads2 {
+        float:right;
+        position: absolute;
+        height: 550px;
+        width: 250px;
+		right: 0;
+		top: 10%;
+        background: #FFF;
+        color: #000;
+    }
+    #rest {
+        padding-top: 4%;
+    }
+	#playlist table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin-right: 10%; margin-left: 10%;
+        }
+        #playlist td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        #playlist tr:nth-child(even) {
+            background-color: #444;
+        }
+        #playlist th {
+            background-color: #744bdd;
+        }
+        #control {
+           /* position: absolute;
+            z-index: 1;*/
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #744bdd;
+            padding: 1%;
+			height: 30px;
+        }
+       #partyPlaylist {
+            background: #000;
+            color: #FFF;
+			margin-left: 20%;
+			margin-right: 20%;
+            height:100%;
+			padding: 3%;
+        }
+    /*~~~~~~~~~~~~~~~~~~~~~Start of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
+        #directory {
+            width: 100%;
+            font-family: 'Open Sans';
+            top:0;
+            margin:0;
+            border-style: none none solid none; text-decoration: none; color: #FFF;
+            border-width: thin;
+            position: fixed;
+        }
+		
+		#directory ul {
+			list-style: none;
+			background-color: #000;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		  
+		#directory li {
+			display: inline-block;
+			margin-right: -4px;
+			font-size: 1.2em;
+			line-height: 40px;
+            border-style: none solid none solid; text-decoration: none; color: #FFF;
+            border-width: thin;
+		}
+
+		a.active {
+		  background-color: #fff;
+		  color: #744bdd;
+		  cursor: default;
+		}
+		
+		#directory a:hover {
+		  background-color: #744bdd;
+		}
+		
+		#directory a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			transition: .3s background-color;
+			width: 120px;
+			height: 5%;
+		}
+        /*~~~~~~~~~~~~~~~~~~~~~End of Directory Style~~~~~~~~~~~~~~~~~~~~~*/
+    body {
+        /*background-color: #9900cc;*/
+        background: url(http://i1.sndcdn.com/artworks-000057550344-pjuidc-original.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    #main {
+        background: rgba(0,0,0,0.8);
+        margin-left:20%;
+        margin-right:20%;
+        padding-bottom: 3%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 1%;
+    }
+    
+    #code {
+        border: solid; border-width: 1px;
+        width: 50%; padding: 3px;
+    }
+    #numbers {
+        font-family: 'Open Sans', sans-serif; font-size:300%; color: #FFF;
+    }
+    .note {
+        font-family: 'Open Sans', sans-serif;
+        color: #FFF;
+    }
+    .button {
+        font-family: 'Roboto', sans-serif; font-size:150%;
+        background-color: #000; border: none; text-decoration: none; border: solid; border-color: #ffffff;
+        color: #FFF;
+        margin-top:5%; padding:1%;
+    }
+    button:hover {
+        background-color: #FFF; text-decoration: none;
+        color: #000;
+    }
+    p.big {
+        font-family: 'Fjalla One', sans-serif; font-size:350%; margin-top: 3%;
+        font-weight: 900;
+        color:#FFF;
+    }
+    p.big1 {
+        font-family: 'Fjalla One', sans-serif; font-size:150%; 
+        font-weight: 900;
+        color:#000;
+    }
+</style>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>About Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Fjalla+One" rel="stylesheet">
+    <link rel="icon" type="image/png" href="http://www.iconsfind.com/wp-content/uploads/2013/11/File-Types-Cd-icon.png">
+</head>
+
+<body>
+    <div id="directory">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findParty.html">Find Party</a></li>
+            <li><a href="startParty.html">Start Party</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+	</div>
+    <div id = "rest">
+    <div id ="">
+		<p class="big">About Us</p>
+	</div>    
+    </div>
+
+</body>
+<style>
+    #rest {
+        padding-top: 4%;
+    }
+	p{
+            font-family: 'Open Sans';
+        }
+	p.big {
+		font-family: 'Fjalla One', sans-serif; font-size:350%;
+		font-weight: 900;
+		color: #FFF;
+	}
+	body {
+		background: #000000 url(http://3.bp.blogspot.com/-x9nbvAVJVgM/UPE-6v7v9mI/AAAAAAAAEew/1NTaMU5dyuA/s1600/Dj+steria+hd+pictures.jpg)no-repeat center center fixed;
+		width: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+    /*~~~~~~~~~~~~~~~~~~~~~Start of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
+        #directory {
+            width: 100%;
+            font-family: 'Open Sans';
+            top:0;
+            border-style: none none solid none; text-decoration: none; color: #FFF;
+            border-width: thin;
+            position: fixed;
+        }
+        
+		#directory ul {
+			list-style: none;
+			background-color: #000;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		  
+		#directory li {
+			display: inline-block;
+			margin-right: -4px;
+			font-size: 1.2em;
+			line-height: 40px;
+            border-style: none solid none solid; text-decoration: none; color: #FFF;
+            border-width: thin;
+		}
+
+		a.active {
+		  background-color: #fff;
+		  color: #744bdd;
+		  cursor: default;
+		}
+		
+		#directory a:hover {
+		  background-color: #744bdd;
+		}
+		
+		#directory a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			transition: .3s background-color;
+			width: 120px;
+			height: 5%;
+		}
+        /*~~~~~~~~~~~~~~~~~~~~~End of Directory Style~~~~~~~~~~~~~~~~~~~~~*/
+</style>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Find Party</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Fjalla+One" rel="stylesheet">
+    <link rel="icon" type="image/png" href="http://www.iconsfind.com/wp-content/uploads/2013/11/File-Types-Cd-icon.png">
+</head>
+
+<body>
+    <div id="directory">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findParty.html">Find Party</a></li>
+            <li><a href="startParty.html">Start Party</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+	</div>
+    <div id ="rest">
+		<div id ="container">
+			<center><div id = "uniqueCode"></div><p class = "big">Find Party Playlist</p></center>
+			<center>
+			<p style="top:0; bottom:0;">Note: Only playlists with at least one song will show up</p>
+			<div class="button_box2">
+				
+					<form id ="user-input" class="form-wrapper-2 cf">
+						<input type="text" id="txtInputText" placeholder="Type code here..." required>
+						<button id="go" type="submit">Go</button>
+					</form>
+					<p id='checker'>The value entered is <span id="value"></span></p>
+					<div id = "error"></div>
+			</div>
+			</center>
+		</div>
+		<div class = "ads"><center><p class = "big1">Adspace</p></center></div>
+    </div>
+	<script>
+		var code;
+		$('#go').on("click", function (evnt) {
+			code = $('#txtInputText').val();
+			$("#value").text(code);
+			evnt.preventDefault();
+			if (code.length !== 4) {
+                $("#error").replaceWith("<p class ='warning'> Input must be 4 digits</p>");
+            }
+			else {
+				window.location.href = "startparty.html";
+				var code
+			}
+		});
+	</script>
+    <style>
+        p.warning {
+			color: rgb(255,0,0);
+		}
+		p.big1 {
+        font-family: 'Fjalla One', sans-serif; font-size:150%; 
+        font-weight: 900;
+        color:#000;
+        }
+        div.ads {
+        float:left;
+        position: absolute;
+        height: 15%;
+        width: 95%;
+        margin: 2%;
+        background: #FFF;
+        color: #000;
+        bottom:0;
+        }
+        #rest {
+        padding-top: 4%;
+        }
+        /*~~~~~~~~~~~~~~~~~~~~~Start of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
+         #directory {
+            width: 100%;
+            font-family: 'Open Sans';
+            top:0;
+            border-style: none none solid none; text-decoration: none; color: #FFF;
+            border-width: thin;
+            position: fixed;
+        }
+		
+		#directory ul {
+			list-style: none;
+			background-color: #000;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		  
+		#directory li {
+			display: inline-block;
+			margin-right: -4px;
+			font-size: 1.2em;
+			line-height: 40px;
+            border-style: none solid none solid; text-decoration: none; color: #FFF;
+            border-width: thin;
+		}
+
+		a.active {
+		  background-color: #fff;
+		  color: #744bdd;
+		  cursor: default;
+		}
+		
+		#directory a:hover {
+		  background-color: #744bdd;
+		}
+		
+		#directory a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			transition: .3s background-color;
+			width: 120px;
+			height: 5%;
+		}
+        /*~~~~~~~~~~~~~~~~~~~~~End of Directory Style~~~~~~~~~~~~~~~~~~~~~*/	
+        body {
+            background: #000000 url(http://www.maynoventertainment.com/thumb/equipment.jpg)no-repeat center center fixed;
+			width: 100%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		#container {
+			background: rgba(0,0,0,0.8);
+			height: 100%;
+			margin-left: 30%; margin-right: 30%; padding: 3%;     }
+        /* search box */
+        .button_box2 {
+        margin:100px auto;
+        }
+        /*-------------------------------------*/
+        .cf:before, .cf:after{
+        content:"";
+        display:table;
+        }
+        .cf:after{
+        clear:both;
+        }
+        .cf{
+        zoom:1;
+        }
+        /*-------------------------------------*/ 
+        .form-wrapper-2 {
+        width: 330px;
+        padding: 15px;
+        background: #555;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        }
+        .form-wrapper-2 input {
+        width: 210px;
+        height: 20px;
+        padding: 10px 5px;
+        float: left;
+        font: bold 15px 'Raleway', sans-serif;
+        border: 0;
+        background: #eee;
+        -moz-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+        border-radius: 3px 0 0 3px;
+        }
+        .form-wrapper-2 input:focus {
+        outline: 0;
+        background: #fff;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        }
+        .form-wrapper-2 input::-webkit-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+        }
+        .form-wrapper-2 input:-moz-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+        }
+        .form-wrapper-2 input:-ms-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+        }
+        .form-wrapper-2 button {
+        overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 110px;
+        font: bold 15px/40px 'Raleway', sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        background: #744bdd;
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+        border-radius: 0 3px 3px 0;
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+        }
+        .form-wrapper-2 button:hover{
+        background: #000000;
+        }
+        .form-wrapper-2 button:before {
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent #744bdd transparent;
+        top: 12px;
+        left: -6px;
+        }
+        .form-wrapper-2 button:hover:before{
+        border-right-color: #000000;
+        }
+        .form-wrapper-2 button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+        }
+        p{
+            font-family: 'Open Sans';
+			color: #FFF;
+        }
+        p.big {
+            font-family: 'Fjalla One', sans-serif; font-size:350%;
+            font-weight: 900;
+            color: #FFF;
+        }
+    </style>
+
+</body>
+</html>
