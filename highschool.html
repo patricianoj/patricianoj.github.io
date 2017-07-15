@@ -1,0 +1,212 @@
+ <!-- PATRICIA ORNELAS-->
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Patricia N.O.J.</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    var currentImg = 0;
+                    var images = ["https://cloud.githubusercontent.com/assets/13473751/10718646/16519606-7b35-11e5-9dec-2105f76f667c.jpg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9349433/c8f90b1a-45fa-11e5-8723-c66daa745271.jpeg",
+								  "https://cloud.githubusercontent.com/assets/13473751/11707157/48a0ce12-9eb5-11e5-84a3-780f8eda9946.jpg",
+								  "https://cloud.githubusercontent.com/assets/13473751/11707158/48a20200-9eb5-11e5-896e-7d414e0fe16a.jpg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9349440/c910d95c-45fa-11e5-8acd-3effda4ba007.JPG",
+								  "https://cloud.githubusercontent.com/assets/13473751/9349430/c8f73bfa-45fa-11e5-8d94-ec254cae2829.jpeg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9349429/c8f6c08a-45fa-11e5-8527-267a5fe6e75a.jpeg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9375798/fe29a000-46b9-11e5-9ab2-8d418cb631da.jpg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9349432/c8f8ca88-45fa-11e5-9b49-cd076d78216d.jpeg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9375831/3b8b3ce2-46ba-11e5-9e3d-f2f217ecacad.jpg",
+								  "https://cloud.githubusercontent.com/assets/13473751/10718648/183d13be-7b35-11e5-918f-9dd305eda8ca.jpg",
+								  "https://cloud.githubusercontent.com/assets/13473751/10718790/df4c851e-7b37-11e5-8da6-8432375d7f5f.jpeg",
+								  "https://cloud.githubusercontent.com/assets/13473751/9349431/c8f84f2c-45fa-11e5-8100-d72a6ed6fc51.jpeg"];
+                    var randomImage = Math.floor(Math.random(0,images.length));
+                  
+                    $( "#next" ).click(function() {
+                        if (currentImg==images.length-1) {
+                            currentImg=0;
+                            $("#slideImg").attr("src", images[currentImg]);
+                        }
+                        else {
+                            currentImg=currentImg+1;
+                            $("#slideImg").attr("src", images[currentImg]);
+                        }
+                    })
+                    $( "#prev" ).click(function() {
+                        if (currentImg==0) {;
+                            currentImg=images.length-1;
+                            $("#slideImg").attr("src", images[currentImg]);
+                        }
+                        else {
+                        currentImg=currentImg-1;
+                        $("#slideImg").attr("src", images[currentImg]);
+                        }
+                   })
+                });
+			</script>
+			<script type="text/javascript">
+			  WebFont.load({
+				google: {
+				  families: ['Open Sans']
+				}
+			  });
+			</script>
+			<style type="text/css">
+			  .wf-loading h1 { visibility: hidden; }
+			  .wf-active h1, .wf-inactive h1 { 
+				visibility: visible; font-family: 'Open Sans'; 
+			  }
+			</style>
+			<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+			<link rel="icon" type="image/png" href="http://vignette1.wikia.nocookie.net/copy-and-paste-emoticon/images/e/e1/Smiley-face-md.png/revision/latest?cb=20141228202713">
+        </head>
+        <body>
+        	<div id = "intro">
+        		<div id = "content">
+        			<br>
+        			<br>
+        			<h3>Welcome to a blast from the past!</h3>
+        			<p>Scroll down to see my website from when I was in high school.</p>
+        		</div>
+        	</div>	
+        	<div id = "old">
+            <center>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#school">School</a></li>
+                    <li><a href="#art">Art</a></li>
+		    		<li><a href="#journalism">Journalism</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+			</div>
+			
+			<br>
+ 			<div id="school">
+                <section class="module parallax parallax-2">
+                    <h2>High School</h2>
+                </section>
+				<section class="module content">
+				 <p>I graduated from high school June 16th, 2016. Check out my graduation speech:</p>
+                 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcecilia.jaureguiornelas%2Fvideos%2F1090789214310772%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+               
+					<table>
+						<colgroup>
+								<col span="4" style="background-color: #002436;">
+						</colgroup>
+						<tr><div id="clubs">
+							<th>
+								<div id="code">
+									<u><h3>CODE 101</h3></u>
+									<a href="code101.html">
+										<img src="https://cloud.githubusercontent.com/assets/13473751/9375623/dd9f1916-46b7-11e5-8d9d-d905a170082e.png" width =250px>
+									</a>
+									<p>This club is dedicated to sparking MWA students' interest in STEM. I started this club with a group of friends in order to help other students see the possibilities of a background in technology. We meet once a week during lunch to learn code, talk about software/hardware, and explore tech careers.</p>
+								</div>
+							</th>
+							<th>
+								<div id="kiwins">
+									<u><h3>KIWIN'S</h3></u>
+									 <img src ="https://cloud.githubusercontent.com/assets/13473751/9375616/b4845dde-46b7-11e5-9c98-14b6af3e29ff.jpeg" width =250px>
+									<p>At MWA, <a href="http://www.kiwins.org/">KIWIN'S</a> is a club dedicated to connecting MWA students to community service projects. We are a part of the Jade Division. As a senior, I served as Vice President for the club.</p>
+								</div>
+							</th>
+							<th>
+								<div id="fi">
+									<u><h3>FINANCE AND INVESTMENT</h3></u>
+									<img src="https://cloud.githubusercontent.com/assets/13473751/9349426/c8e41dc2-45fa-11e5-9bfd-15ed28aa9076.jpeg" width =250px/>
+									<p>This club is dedicated to teaching students financial literacy through videos and virtual experience with the stock market. During my senior year, I will be serving as the club's Secretary.</p>
+								</div>
+							</th>
+							<th>
+								<div id="asb">
+									<u><h3>Associated Student Body Government (ASB)</h3></u>
+									<img src="https://cloud.githubusercontent.com/assets/13473751/12073243/bd14352e-b0c9-11e5-82bd-078e7533bb9a.JPG" width =250px>
+									<p>MWA student body has elected me as their Vice President for the 2015-16 schoolyear. This is the first year that we have this organization and I hope to make real improvements to MWA through my role as VP.</p>
+								</div>
+							</th>
+						</div></tr>
+					</table>
+				</section>
+            </div>
+			<br>
+			<br>
+            <div id="community">
+                <section class="module parallax parallax-1">
+                    <center><h2>Community</h2><center>
+                    <br/>
+				</section>
+                <section class="module content">
+			<div id="cprojects">
+					<table>
+						<colgroup>
+							<col span="2" style="background-color: #002500;">
+						</colgroup>
+						<tr>
+							<th><div id="rw">
+								<u><h3>RichWHAT</h3></u>
+								<img src="https://cloud.githubusercontent.com/assets/13473751/10718659/49e991d0-7b35-11e5-830a-5d9442f50c05.jpg" width=500px>
+								<p><b>Vision:</b> RICHWHAT envisions a new Richmond reputation of peace, talent, unity and rich culture that overcomes stereotypes as well as statistics.</p>
+								<p><b>Mission:</b> RICHWHAT will change the perception of Richmond and its people through a showcase of talents. The reunion of people will not only be an opportunity for people to demonstrate their abilities but to show that Richmond isn't just about violence and drug endorsement. Together we shall portray Richmond's reality, a diverse and intelligent youth that will commit to change a better well being for the generations to come.</p>
+								<p><b>Outcome:</b> This event occured on May 22nd, 2015 in Richmond. There were a total of 50 people involved in the event. As members of the Youth Leadership Committee of Richmond, Luis Martinez and I codirected this event with a grant from the city of Richmond and with the help of our family and friends.</p>
+								</div></th>
+							<th><div id="cp">
+                         <u><h3>Citywide Pride</h3></u>
+                         <img src="https://cloud.githubusercontent.com/assets/13473751/9349424/c8e238a4-45fa-11e5-9faa-aa317a963d71.jpg" width=500px>
+                         <br />
+                         <a href="https://www.facebook.com/citywidepride/info?tab=page_info">Find us on Facebook</a>
+                         <p><b>Vision: </b>A city with clean streets and devotedly proud neighbors.</p>
+                         <p><b>Mission: </b>Bringing together a diverse group of neighbors to organize a trash pickup and community celebration in Richmond.</p>     
+                         <p><b>Outcome: </b>Citywide Pride's beautification event took place on November 1st, 2014. Approximately 50 Richmond residents volunteered early in the morning to clean the streets. Collectively, we picked up about 840 pounds of trash! We received food and donations from the city of Richmond and from residents. Special thank you to the leadership team who made this possible: Bianca Delgado, Meghan Lorenzo, and Ariana Ortega.</p>
+                    </div></th>
+						</tr>
+					</table>
+					</div>
+                </section>
+      		</div>
+            <br>
+            <div id="art">
+                <section class="module parallax parallax-3">
+                    <center><h2>Art</h2></center>
+                </section>
+                <section class="module content">
+					<br />
+					<div id="drawings">
+						<button id="next" style = "float: left; padding-left: 5px; padding-right: 5px; padding-top: 30px; padding-bottom: 30px; background-color: #fff; font-size: 250px; border: 1px solid #666; color:#000; opacity: .2; text-decoration: none;"><</button>
+						<img src="https://cloud.githubusercontent.com/assets/13473751/10718646/16519606-7b35-11e5-9dec-2105f76f667c.jpg" height=350px id="slideImg"/>
+						<button id="prev" style = "float: right; padding-left: 5px; padding-right: 5px; padding-top: 30px; padding-bottom: 30px; background-color: #fff; font-size: 250px; border: 1px solid #666; color:#000; opacity: .2; text-decoration: none;">></button>
+					</div>
+				</section>
+            </div>
+            <br>
+			<div id="journalism">
+				<section class="module parallax parallax-5">
+                    <center><h2>Journalism</h2></center>
+                </section>
+                <section class="module content">
+					<br />
+					<p>Journalism club/class have been writing articles to publish on a variety of media outlets, but now we have our very own media outlet!</p>
+					<h3><a href="http://thetidalwave.github.io/" target="_blank">Visit The Tidal Wave!</a></h3>
+					<p>I wrote the code for the news website that will hold articles written by high school students.</p>
+					<br />
+					<p>The article I wrote about the <a href="http://thetidalwave.github.io/articles.html#afterschoolapp">AfterSchool App</a> has also been published in the Contra Costa County student newspaper, the CC Spin.</p>
+					<br />
+					<p>MWA had its first journalism class in 2015-16. Among other students in this class, I advocated for the inclusion of charter school students in the Richmond Promise. To read my article <a href="http://www.radiofreerichmond.com/student_perspectives_on_the_richmond_promise_part_3">click here</a>.
+						In addition to submitting this article to a city news organization, I also delivered speech on behalf of public charter school students. To read more about the rally, <a href="http://richmondconfidential.org/2015/10/15/charter-school-community-rallies-for-inclusion-in-scholarship-program/">click here</a>.
+                        			After many weeks of deliberation and protesting, the city council decided to include all students of Richmond in the Richmond Promise!</p>
+                			<img src="http://richmondconfidential.org/wp-content/uploads/2015/10/20151015_CHTRPROTEST_01-600x400.jpg" height="250px"/>
+                			<img src="https://d3n8a8pro7vhmx.cloudfront.net/radiofreerichmond/pages/871/attachments/original/1445634068/blogimage.jpg?1445634068" height="250px"/>
+                
+				</section>
+			</div>
+			<div id="contact">
+				<p><h2>Contact Information</h2> Email: patriciapnoj@gmail.com | Find me on LinkedIn: <a href="https://www.linkedin.com/in/ornelaspatricia/">Patricia Ornelas</a></p>
+            </div>
+            </center>
+            </div>
+            
+		</body>
+</html>
