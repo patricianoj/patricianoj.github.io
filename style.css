@@ -69,16 +69,6 @@ p {
     font-weight: normal;
 }
 
-body {
-    background-color: #000000;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Open Sans', "Arial";
-    margin: 0px auto;
-    PADDING-LEFT: 15px;
-    PADDING-RIGHT: 15px;
-}
-
 table, th, td {
     border: 1px solid black;
 }
