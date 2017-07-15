@@ -3,12 +3,35 @@
     margin:0;
 }
 
+#intro {
+	background-image: url("patricianoj.github.io/editgrad.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    margin-top:0;
+    padding:0;
+}
+
+#content h3 {
+	font-size: 600%;
+}
+
+#content {
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: "Open Sans";
+	color: #fff;
+	text-align: left;
+	background-color:rgba(0,0,0, 0.6);
+	margin-left: 10%;
+	margin-right: 10%;
+	height:600px;
+}
+
 #menu {
     height: 25px;
     color: #FFFFFF;
-    top: 0;
-    position:fixed;
-    z-index: 2;
     width: 1200px;
 }
 
@@ -81,6 +104,7 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
+
 section.module.parallax h2, section.module.parallax h3 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 50px;
@@ -132,7 +156,7 @@ section.module.parallax-5 {
   }
 }
 
-body {
+#old {
     background-color: #000000;
     font-size: 16px;
     color: #FFFFFF;
@@ -163,12 +187,4 @@ body {
 
 #contact {
    background-color: #330033;
-}
-
-#about {
-    background-color: #444;
-    padding: 3px;
-    border: 3px;
-    border-style: solid;
-    border-color: #cc99ff;
 }
